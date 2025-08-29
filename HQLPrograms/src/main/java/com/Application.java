@@ -13,12 +13,12 @@ public class Application {
         SessionFactory sessionFactory = com.utils.HibernateUtil.getSessionFactory();
         Session session = sessionFactory.openSession();
         try {
-//            insertStudent(session);
-//            retriveData(session);
-//        	  retriveRandom(session);
-//        	  insertUsingMutationQuery(session);
-//        	  updateMutationQuery(session);
-//        	  deleteUsingMutationQuery(session);
+            insertStudent(session);
+            retriveData(session);
+       	    retriveRandom(session);
+        	insertUsingMutationQuery(session);
+        	updateMutationQuery(session);
+       	    deleteUsingMutationQuery(session);
         	
         	} finally {
             session.close();  
@@ -77,3 +77,4 @@ public class Application {
         session.getTransaction().commit();
     }
 }
+
