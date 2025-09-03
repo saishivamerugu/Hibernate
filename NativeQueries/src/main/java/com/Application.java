@@ -25,7 +25,7 @@ public class Application {
     private static void updateStudentMarks(Session session) {
         session.beginTransaction();
         MutationQuery updateQuery = session.createNativeMutationQuery(
-                "UPDATE student SET marks = ?1 WHERE studentId = ?2"
+                "update student ser marks = ?1 where studentId = ?2"
         );
         updateQuery.setParameter(1, 36);
         updateQuery.setParameter(2, 5);
@@ -36,7 +36,7 @@ public class Application {
     private static void deleteStudent(Session session) {
         session.beginTransaction();
         MutationQuery deleteQuery = session.createNativeMutationQuery(
-                "DELETE FROM student WHERE studentId = ?1"
+                "delete from student where studentId = ?1"
         );
         deleteQuery.setParameter(1, 6);
         deleteQuery.executeUpdate();
@@ -57,7 +57,7 @@ public class Application {
 
     private static void retriveUsingNativeQueries(Session session) {
         NativeQuery<Student> query = session.createNativeQuery(
-            "SELECT studentId as studentId, name as name, marks as marks FROM student WHERE studentId = ?1", 
+            "select studentId as studentId, name as name, marks as marks from student where studentId = ?1", 
             Student.class);
         query.setParameter(1, 1);
         List<Student> list = query.list();
@@ -66,3 +66,4 @@ public class Application {
  
 
 }
+
