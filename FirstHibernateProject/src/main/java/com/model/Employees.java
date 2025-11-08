@@ -23,7 +23,6 @@ public class Employees {
         this.salary = salary;
     }
 
-    // Getters and Setters
     public int getId() {
         return id;
     }
@@ -54,4 +53,5 @@ public class Employees {
 	}
     
 }
+
 
