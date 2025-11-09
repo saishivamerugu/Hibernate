@@ -1,5 +1,5 @@
 # Hibernate
-# Hibernate Projects by Sai Shiva Merugu
+
 
 This repository contains a collection of Hibernate-based Java projects created for learning and demonstration purposes. Each project explores different aspects of Hibernate ORM, including HQL, native queries, composite keys, and entity relationships. The examples are optimized for beginners and intermediate Java developers aiming to understand how Hibernate works under the hood.
 
